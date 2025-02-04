@@ -39,18 +39,25 @@ const TailscaleIndicator = GObject.registerClass(
     _init(icon, tailscale) {
       super._init();
 
-      // Create the icon for the indicator
-      const up = this._addIndicator();
-      up.gicon = icon;
-      tailscale.bind_property("running", up, "visible", GObject.BindingFlags.SYNC_CREATE | GObject.BindingFlags.DEFAULT);
+      // Create a single indicator that will change icons
+      const indicator = this._addIndicator();
+      
+      const updateIcon = () => {
+        if (!tailscale.running) {
+          indicator.visible = false;
+        } else {
+          indicator.visible = true;
+          if (tailscale.exit_node !== "") {
+            indicator.icon_name = "network-vpn-symbolic";
+          } else {
+            indicator.gicon = icon;
+          }
+        }
+      };
 
-      // Create the icon for the indicator
-      const exit = this._addIndicator();
-      exit.icon_name = "network-vpn-symbolic";
-      const setVisible = () => { exit.visible = tailscale.running && tailscale.exit_node != ""; }
-      tailscale.connect("notify::exit-node", () => setVisible());
-      tailscale.connect("notify::running", () => setVisible());
-      setVisible();
+      tailscale.connect("notify::exit-node", updateIcon);
+      tailscale.connect("notify::running", updateIcon);
+      updateIcon();
     }
   }
 );
