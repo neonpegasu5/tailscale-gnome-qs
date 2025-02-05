@@ -32,9 +32,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      showgrid="false"
-     inkscape:zoom="26.573022"
-     inkscape:cx="5.5319264"
-     inkscape:cy="12.399794"
+     inkscape:zoom="11.486216"
+     inkscape:cx="3.1341914"
+     inkscape:cy="9.5331655"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -48,7 +48,7 @@
      class="dot dot-a1"
      opacity="0.2"
      id="circle2"
-     style="stroke-width:2;stroke-dasharray:none;opacity:1" />
+     style="stroke-width:2;stroke-dasharray:none;opacity:0.3" />
   <circle
      cx="2.1125956"
      cy="7.945148"
@@ -64,13 +64,6 @@
      opacity="0.2"
      id="circle6"
      style="stroke-width:2;stroke-dasharray:none;opacity:0.3" />
-  <circle
-     cx="8.0365677"
-     cy="7.945148"
-     r="1.9746574"
-     class="dot dot-b1"
-     id="circle8"
-     style="stroke-width:2;stroke-dasharray:none" />
   <circle
      cx="8.0365677"
      cy="13.942257"
@@ -93,7 +86,7 @@
      class="dot dot-c1"
      opacity="0.2"
      id="circle14"
-     style="stroke-width:2;stroke-dasharray:none;opacity:1" />
+     style="stroke-width:2;stroke-dasharray:none;opacity:0.3" />
   <circle
      cx="13.887404"
      cy="7.945148"
@@ -109,4 +102,28 @@
      opacity="0.2"
      id="circle18"
      style="stroke-width:2;stroke-dasharray:none;opacity:0.3" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+     d="M 9.4284849,3.4583602 12.495487,6.5445313"
+     id="path9"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0"
+     inkscape:connection-start="#circle12"
+     inkscape:connection-end="#circle16" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+     d="M 12.508455,9.3585716 9.4155173,12.528833"
+     id="path10"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0"
+     inkscape:connection-start="#circle16"
+     inkscape:connection-end="#circle10" />
+  <path
+     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
+     d="M 11.912747,7.945148 H 4.087253"
+     id="path11"
+     inkscape:connector-type="polyline"
+     inkscape:connector-curvature="0"
+     inkscape:connection-start="#circle16"
+     inkscape:connection-end="#circle4" />
 </svg>
