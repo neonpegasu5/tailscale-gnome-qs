@@ -36,7 +36,7 @@ import { clearInterval, clearSources, setInterval } from "./timeout.js";
 
 const TailscaleIndicator = GObject.registerClass(
   class TailscaleIndicator extends QuickSettings.SystemIndicator {
-    _init(icon, tailscale) {
+    _init(icon, exit_node_icon, tailscale) {
       super._init();
 
       // Create a single indicator that will change icons
@@ -48,7 +48,7 @@ const TailscaleIndicator = GObject.registerClass(
         } else {
           indicator.visible = true;
           if (tailscale.exit_node !== "") {
-            indicator.icon_name = "network-vpn-symbolic";
+            indicator.gicon = exit_node_icon;
           } else {
             indicator.gicon = icon;
           }
@@ -222,9 +222,10 @@ const TailscaleMenuToggle = GObject.registerClass(
 export default class TailscaleExtension extends Extension {
   enable() {
     const icon = Gio.icon_new_for_string(`${this.path}/icons/tailscale-symbolic.svg`);
+    const exit_node_icon = Gio.icon_new_for_string(`${this.path}/icons/tailscale-exit-node-symbolic.svg`);
 
     this._tailscale = new Tailscale();
-    this._indicator = new TailscaleIndicator(icon, this._tailscale);
+    this._indicator = new TailscaleIndicator(icon, exit_node_icon, this._tailscale);
     this._menu = new TailscaleMenuToggle(icon, this._tailscale);
     if (QuickSettingsMenu.addExternalIndicator) {
       this._indicator.quickSettingsItems.push(this._menu);
