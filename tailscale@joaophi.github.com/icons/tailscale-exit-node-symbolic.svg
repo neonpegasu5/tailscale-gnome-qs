@@ -12,16 +12,7 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <defs
-     id="defs26">
-    <linearGradient
-       id="swatch7"
-       inkscape:swatch="solid">
-      <stop
-         style="stop-color:#000000;stop-opacity:1;"
-         offset="0"
-         id="stop7" />
-    </linearGradient>
-  </defs>
+     id="defs26" />
   <sodipodi:namedview
      id="namedview24"
      pagecolor="#505050"
@@ -32,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#505050"
      showgrid="false"
-     inkscape:zoom="11.486216"
-     inkscape:cx="3.1341914"
-     inkscape:cy="9.5331655"
+     inkscape:zoom="50.019489"
+     inkscape:cx="8.006879"
+     inkscape:cy="7.3971167"
      inkscape:window-width="1920"
      inkscape:window-height="1011"
      inkscape:window-x="0"
@@ -66,11 +57,18 @@
      style="stroke-width:2;stroke-dasharray:none;opacity:0.3" />
   <circle
      cx="8.0365677"
+     cy="7.945148"
+     r="1.9746574"
+     class="dot dot-b1"
+     id="circle8"
+     style="stroke-width:2;stroke-dasharray:none" />
+  <circle
+     cx="8.0365677"
      cy="13.942257"
+     r="1.9746574"
      class="dot dot-b2"
      id="circle10"
-     style="stroke-width:2;stroke-dasharray:none;opacity:1"
-     r="1.9746574" />
+     style="stroke-width:2;stroke-dasharray:none" />
   <circle
      cx="8.0365677"
      cy="2.0577435"
@@ -93,7 +91,7 @@
      r="1.9746574"
      class="dot dot-c2"
      id="circle16"
-     style="stroke-width:2;stroke-dasharray:none" />
+     style="display:inline;stroke-width:2;stroke-dasharray:none" />
   <circle
      cx="13.887404"
      cy="13.942257"
@@ -102,28 +100,11 @@
      opacity="0.2"
      id="circle18"
      style="stroke-width:2;stroke-dasharray:none;opacity:0.3" />
-  <path
-     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-     d="M 9.4284849,3.4583602 12.495487,6.5445313"
-     id="path9"
-     inkscape:connector-type="polyline"
-     inkscape:connector-curvature="0"
-     inkscape:connection-start="#circle12"
-     inkscape:connection-end="#circle16" />
-  <path
-     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-     d="M 12.508455,9.3585716 9.4155173,12.528833"
-     id="path10"
-     inkscape:connector-type="polyline"
-     inkscape:connector-curvature="0"
-     inkscape:connection-start="#circle16"
-     inkscape:connection-end="#circle10" />
-  <path
-     style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:4;stroke-linecap:square;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1"
-     d="M 11.912747,7.945148 H 4.087253"
-     id="path11"
-     inkscape:connector-type="polyline"
-     inkscape:connector-curvature="0"
-     inkscape:connection-start="#circle16"
-     inkscape:connection-end="#circle4" />
+  <ellipse
+     style="opacity:0.3;fill:#000000"
+     id="path1"
+     cx="5.867713"
+     cy="7.9768906"
+     rx="0.069972724"
+     ry="0.039984416" />
 </svg>
